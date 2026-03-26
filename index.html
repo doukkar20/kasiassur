@@ -1,0 +1,2413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KASIASSUR | Courtier en assurance a Paris pour auto, habitation, sante et professionnels</title>
+  <meta
+    name="description"
+    content="KASIASSUR, courtier en assurance a Paris, accompagne particuliers et professionnels en France pour l'auto, l'habitation, la sante et les assurances professionnelles. ORIAS 26004041."
+  >
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="KASIASSUR">
+  <meta name="theme-color" content="#2D1B4E">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KASIASSUR | Courtier en assurance a Paris pour auto, habitation, sante et professionnels">
+  <meta property="og:description" content="Courtier en assurance a Paris, KASIASSUR accompagne particuliers et professionnels en France avec conseil humain, parcours digital et informations legales verifiables.">
+  <meta property="og:url" content="https://kasiassur.fr/">
+  <meta property="og:site_name" content="KASIASSUR">
+  <meta property="og:image" content="https://kasiassur.fr/img/hero-bg-1600.jpg">
+  <meta property="og:image:alt" content="Conseil en assurance digital KASIASSUR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KASIASSUR | Courtier en assurance a Paris">
+  <meta name="twitter:description" content="Assurance auto, habitation, sante et pro pour particuliers et professionnels en France.">
+  <meta name="twitter:image" content="https://kasiassur.fr/img/hero-bg-1600.jpg">
+  <link rel="canonical" href="https://kasiassur.fr/">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
+  <link rel="preload" as="image" href="img/hero-bg-1600.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="i18n.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              purple: "#2D1B4E",
+              purpleSoft: "#3E2767",
+              cyan: "#00D1FF",
+              cyanSoft: "#8DEAFF",
+              ink: "#122033",
+              mist: "#F2F8FF",
+              sand: "#F7F3EC",
+              success: "#12B981"
+            }
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+            display: ["Fraunces", "serif"]
+          },
+          boxShadow: {
+            soft: "0 24px 70px rgba(15, 23, 42, 0.10)",
+            card: "0 24px 55px rgba(45, 27, 78, 0.14)",
+            cyan: "0 0 0 1px rgba(0, 209, 255, 0.18), 0 18px 48px rgba(0, 209, 255, 0.22)",
+            pulse: "0 0 0 0 rgba(0, 209, 255, 0.45)"
+          },
+          backgroundImage: {
+            aurora:
+              "radial-gradient(circle at 8% 10%, rgba(0,209,255,.10), transparent 24%), radial-gradient(circle at 92% 14%, rgba(45,27,78,.18), transparent 28%), linear-gradient(180deg, #f8fbff 0%, #f4f7fb 40%, #eef4fb 100%)",
+            panel:
+              "linear-gradient(145deg, rgba(255,255,255,.94), rgba(255,255,255,.78))",
+            hero:
+              "linear-gradient(135deg, rgba(45,27,78,.96), rgba(19,44,86,.92))"
+          },
+          keyframes: {
+            "pulse-soft": {
+              "0%, 100%": { boxShadow: "0 0 0 0 rgba(0, 209, 255, 0.0)" },
+              "50%": { boxShadow: "0 0 0 18px rgba(0, 209, 255, 0.0), 0 18px 48px rgba(0, 209, 255, 0.24)" }
+            },
+            "success-pop": {
+              "0%": { transform: "scale(.8)", opacity: "0" },
+              "55%": { transform: "scale(1.05)", opacity: "1" },
+              "100%": { transform: "scale(1)", opacity: "1" }
+            },
+            "float-slow": {
+              "0%, 100%": { transform: "translateY(0px)" },
+              "50%": { transform: "translateY(-10px)" }
+            }
+          },
+          animation: {
+            "pulse-soft": "pulse-soft 2.8s ease-in-out infinite",
+            "success-pop": "success-pop .7s ease-out both",
+            "float-slow": "float-slow 4s ease-in-out infinite"
+          }
+        }
+      }
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        @apply overflow-x-hidden bg-brand-sand bg-aurora font-sans text-brand-ink antialiased;
+      }
+
+      ::selection {
+        @apply bg-brand-cyan/30 text-brand-purple;
+      }
+    }
+
+    @layer components {
+      .section-shell {
+        @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+      }
+
+      .glass-panel {
+        @apply rounded-[28px] border border-white/70 bg-panel backdrop-blur-xl shadow-soft;
+      }
+
+      .nav-link {
+        @apply relative text-sm font-semibold text-slate-700 transition-colors duration-200 hover:text-brand-purple focus-visible:outline-none focus-visible:text-brand-purple;
+      }
+
+      .nav-link::after {
+        content: "";
+        @apply absolute -bottom-2 left-0 h-0.5 w-full origin-left scale-x-0 rounded-full bg-brand-cyan transition-transform duration-300;
+      }
+
+      .nav-link:hover::after,
+      .nav-link:focus-visible::after {
+        @apply scale-x-100;
+      }
+
+      .eyebrow {
+        @apply text-xs font-extrabold uppercase tracking-[0.28em] text-brand-cyan;
+      }
+
+      .field-shell {
+        @apply space-y-2;
+      }
+
+      .field-label {
+        @apply text-sm font-semibold text-brand-purple;
+      }
+
+      .field-input {
+        @apply block w-full rounded-2xl border border-slate-200 bg-white/95 px-4 py-3.5 text-sm text-slate-800 shadow-sm transition duration-200 placeholder:text-slate-400 focus:border-brand-cyan focus:ring-4 focus:ring-brand-cyan/15;
+      }
+
+      .field-input[aria-invalid="true"] {
+        @apply border-rose-400 ring-4 ring-rose-200/70;
+      }
+
+      .field-error {
+        @apply hidden text-sm font-medium text-rose-600;
+      }
+
+      .field-error.is-visible {
+        @apply block;
+      }
+
+      .route-card {
+        @apply rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm transition duration-300;
+      }
+
+      .route-card.is-active {
+        @apply border-brand-cyan/60 bg-brand-purple text-white shadow-cyan;
+      }
+
+      .route-card.is-active .route-text,
+      .route-card.is-active .route-mail {
+        @apply text-white/90;
+      }
+
+      .module-card {
+        @apply glass-panel relative overflow-hidden rounded-[30px] border border-white/70 p-5 transition duration-300 will-change-transform sm:p-6;
+      }
+
+      .card-glow {
+        @apply pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300;
+        border-radius: inherit;
+        background: radial-gradient(circle at 50% 0%, rgba(0, 209, 255, 0.25), transparent 60%);
+      }
+
+      .magnetic-card:hover .card-glow,
+      .magnetic-card:focus-within .card-glow {
+        @apply opacity-100;
+      }
+
+      .pulse-cta {
+        @apply relative animate-pulse-soft;
+      }
+
+      .pulse-cta::before {
+        content: "";
+        @apply absolute inset-0 -z-10 rounded-full bg-brand-cyan/15 blur-xl;
+      }
+
+      .success-chip {
+        @apply pointer-events-none rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 opacity-0 shadow-sm;
+      }
+
+      .hero-grid {
+        background-image:
+          linear-gradient(rgba(18, 32, 51, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(18, 32, 51, 0.05) 1px, transparent 1px);
+        background-size: 72px 72px;
+        mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.9), transparent 92%);
+      }
+
+      .hero-orb {
+        @apply pointer-events-none absolute rounded-full blur-3xl;
+      }
+    }
+
+    @layer utilities {
+      .text-balance {
+        text-wrap: balance;
+      }
+    }
+  </style>
+  <style>
+    .legal-contact-card {
+      margin-top: 1.5rem;
+      padding: clamp(1.5rem, 2vw, 2.25rem);
+      border: 1px solid rgba(191, 219, 254, 0.72);
+      border-radius: 32px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.94)),
+        linear-gradient(135deg, rgba(219, 234, 254, 0.3), rgba(255, 255, 255, 0));
+      box-shadow:
+        0 22px 60px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .legal-contact-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(96, 165, 250, 0.62);
+      box-shadow:
+        0 28px 70px rgba(37, 99, 235, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.92);
+    }
+
+    .legal-contact-card__header {
+      display: grid;
+      gap: 1rem;
+      align-items: end;
+    }
+
+    .legal-contact-card__lead {
+      margin: 0;
+      max-width: 38rem;
+      color: #475569;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .legal-contact-card__grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .legal-contact-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.2rem;
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88);
+    }
+
+    .legal-contact-item__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.3rem;
+      height: 3.3rem;
+      border-radius: 18px;
+      color: #2563eb;
+      background: linear-gradient(145deg, rgba(219, 234, 254, 0.96), rgba(239, 246, 255, 0.96));
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 10px 24px rgba(37, 99, 235, 0.12);
+    }
+
+    .legal-contact-item__icon svg {
+      width: 1.35rem;
+      height: 1.35rem;
+      stroke: currentColor;
+    }
+
+    .legal-contact-item dt {
+      margin: 0;
+      color: #1e3a8a;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .legal-contact-item dd {
+      margin: 0.45rem 0 0;
+      color: #0f172a;
+      font-size: 1.08rem;
+      font-weight: 500;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    .legal-contact-item a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 180ms ease;
+    }
+
+    .legal-contact-item a:hover,
+    .legal-contact-item a:focus-visible {
+      color: #2563eb;
+    }
+
+    .legal-contact-card__footer {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      color: #334155;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .footer-social-card {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.95rem 1rem;
+      border: 1px solid rgba(191, 219, 254, 0.9);
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at top left, rgba(0, 209, 255, 0.18), transparent 36%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.94));
+      box-shadow:
+        0 16px 40px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.92);
+      overflow: hidden;
+    }
+
+    .footer-social-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -55% auto;
+      width: 140px;
+      height: 140px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    .footer-social-copy {
+      display: grid;
+      gap: 0.2rem;
+      min-width: 0;
+      flex: 1 1 150px;
+    }
+
+    .footer-social-kicker {
+      color: #64748b;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .footer-social-title {
+      color: #1e1b4b;
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .footer-social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      align-items: center;
+    }
+
+    .footer-social-icon {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.9rem;
+      height: 2.9rem;
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      border-radius: 18px;
+      color: #2d1b4e;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.92));
+      box-shadow:
+        0 10px 24px rgba(37, 99, 235, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      transition: transform 200ms ease, border-color 200ms ease, color 200ms ease, box-shadow 200ms ease;
+    }
+
+    .footer-social-icon:hover {
+      transform: translateY(-2px);
+      color: #2563eb;
+      border-color: rgba(96, 165, 250, 0.55);
+      box-shadow:
+        0 16px 32px rgba(37, 99, 235, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
+    }
+
+    .footer-social-icon svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-proof {
+      display: grid;
+      gap: 0.9rem;
+      max-width: 420px;
+    }
+
+    .footer-proof-copy {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .footer-proof-badge {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.85rem;
+      border: 1px solid rgba(0, 209, 255, 0.16);
+      border-radius: 999px;
+      background: rgba(0, 209, 255, 0.08);
+      color: #1e1b4b;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .footer-proof-badge::before {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #00d1ff, #2563eb);
+      box-shadow: 0 0 0 5px rgba(0, 209, 255, 0.12);
+    }
+
+    .footer-proof-desc {
+      color: #64748b;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .footer-proof-grid {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+    }
+
+    .footer-proof-card {
+      padding: 0.9rem 0.95rem;
+      border: 1px solid rgba(226, 232, 240, 0.92);
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.9));
+      box-shadow:
+        0 12px 24px rgba(15, 23, 42, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    }
+
+    .footer-proof-label {
+      display: block;
+      color: #64748b;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .footer-proof-value {
+      display: block;
+      margin-top: 0.45rem;
+      color: #1e1b4b;
+      font-size: 0.98rem;
+      font-weight: 800;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    .footer-proof-value a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .footer-proof-value a:hover,
+    .footer-proof-value a:focus-visible {
+      color: #2563eb;
+    }
+
+    .section-frame {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.25rem, 2vw, 2rem);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 38px;
+      background:
+        radial-gradient(circle at top left, rgba(0, 209, 255, 0.08), transparent 30%),
+        radial-gradient(circle at 100% 0, rgba(45, 27, 78, 0.08), transparent 28%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.42));
+      box-shadow:
+        0 26px 70px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(16px);
+      isolation: isolate;
+    }
+
+    .section-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.34), transparent 45%),
+        linear-gradient(180deg, transparent 60%, rgba(15, 23, 42, 0.03));
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .section-frame--light {
+      background:
+        radial-gradient(circle at top left, rgba(125, 211, 252, 0.12), transparent 28%),
+        radial-gradient(circle at 100% 0, rgba(129, 140, 248, 0.09), transparent 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 250, 252, 0.58));
+    }
+
+    .section-heading-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.4rem, 2vw, 1.9rem);
+      border: 1px solid rgba(226, 232, 240, 0.88);
+      border-radius: 30px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.88));
+      box-shadow:
+        0 16px 34px rgba(15, 23, 42, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .section-heading-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 24px 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(0, 209, 255, 0), rgba(0, 209, 255, 0.4), rgba(45, 27, 78, 0));
+    }
+
+    .hero-trustbar {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hero-slider {
+      position: relative;
+      height: 100%;
+    }
+
+    .hero-slides {
+      position: relative;
+      height: 100%;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem;
+      opacity: 0;
+      transform: scale(1.03);
+      transition: opacity 520ms ease, transform 720ms ease;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at top left, rgba(0, 209, 255, 0.16), transparent 26%),
+        linear-gradient(180deg, rgba(30, 41, 59, 0.18), rgba(45, 27, 78, 0.32));
+    }
+
+    .hero-slide.is-active {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+    }
+
+    .hero-slide img {
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 22px;
+    }
+
+    .hero-slider-ui {
+      position: absolute;
+      top: 5.4rem;
+      right: 1rem;
+      z-index: 25;
+      display: grid;
+      gap: 0.7rem;
+      justify-items: end;
+    }
+
+    .hero-slider-nav {
+      display: inline-flex;
+      gap: 0.55rem;
+      padding: 0.45rem;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.34);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 16px 38px rgba(15, 23, 42, 0.18);
+    }
+
+    .hero-slider-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.65rem;
+      height: 2.65rem;
+      border: 0;
+      border-radius: 999px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.14);
+      cursor: pointer;
+      transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+    }
+
+    .hero-slider-button:hover,
+    .hero-slider-button:focus-visible {
+      transform: translateY(-1px);
+      color: #2d1b4e;
+      background: rgba(255, 255, 255, 0.96);
+      outline: none;
+    }
+
+    .hero-slider-dots {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14);
+    }
+
+    .hero-slider-dot {
+      width: 0.7rem;
+      height: 0.7rem;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.6);
+      cursor: pointer;
+      transition: transform 180ms ease, background 180ms ease, width 180ms ease;
+    }
+
+    .hero-slider-dot.is-active {
+      width: 1.6rem;
+      background: linear-gradient(90deg, #00d1ff, #2d1b4e);
+    }
+
+    .hero-trustbar article,
+    .metric-card,
+    .method-step,
+    .faq-card,
+    .contact-panel-card,
+    .route-card {
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background 220ms ease;
+    }
+
+    .hero-trustbar article {
+      position: relative;
+      padding: 1rem 1.15rem;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .hero-trustbar article:hover,
+    .metric-card:hover,
+    .method-step:hover,
+    .faq-card:hover,
+    .contact-panel-card:hover,
+    .route-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 45px rgba(15, 23, 42, 0.10);
+      border-color: rgba(96, 165, 250, 0.38);
+    }
+
+    .metric-card {
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.82));
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .module-card {
+      box-shadow:
+        0 18px 38px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .module-card img {
+      transition: transform 340ms ease, filter 340ms ease;
+    }
+
+    .module-card:hover,
+    .module-card:focus-within {
+      transform: translateY(-6px);
+      box-shadow:
+        0 28px 60px rgba(15, 23, 42, 0.14),
+        0 0 0 1px rgba(0, 209, 255, 0.12);
+    }
+
+    .module-card:hover img,
+    .module-card:focus-within img {
+      transform: scale(1.04);
+      filter: saturate(1.06);
+    }
+
+    .method-step {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(226, 232, 240, 0.82);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 250, 252, 0.84));
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .method-step::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, rgba(0, 209, 255, 0.9), rgba(45, 27, 78, 0.6));
+    }
+
+    .faq-card {
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.8));
+      box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+    }
+
+    .reviews-grid {
+      display: grid;
+      gap: 1.2rem;
+      margin-top: 3rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .review-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 1.55rem;
+      border: 1px solid rgba(226, 232, 240, 0.82);
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at top right, rgba(0, 209, 255, 0.10), transparent 28%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.88));
+      box-shadow:
+        0 18px 42px rgba(15, 23, 42, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 0.92);
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .review-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, rgba(0, 209, 255, 0.95), rgba(37, 99, 235, 0.9), rgba(45, 27, 78, 0.9));
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(96, 165, 250, 0.34);
+      box-shadow:
+        0 26px 52px rgba(15, 23, 42, 0.10),
+        0 0 0 1px rgba(0, 209, 255, 0.10);
+    }
+
+    .review-stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .review-stars svg {
+      width: 1rem;
+      height: 1rem;
+      fill: #f5b301;
+      stroke: #f5b301;
+    }
+
+    .review-text {
+      margin-top: 1.1rem;
+      margin-bottom: 1.35rem;
+      color: #334155;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    .review-avatar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      background: linear-gradient(135deg, #2d1b4e, #2563eb);
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
+      flex: 0 0 auto;
+    }
+
+    .review-name {
+      color: #1e1b4b;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .contact-panel-card {
+      box-shadow:
+        0 20px 48px rgba(15, 23, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+    }
+
+    .route-card {
+      border-width: 1px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.84));
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+    }
+
+    .footer-panel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(0, 209, 255, 0.12), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(45, 27, 78, 0.12), transparent 30%);
+      pointer-events: none;
+    }
+
+    @media (min-width: 860px) {
+      .legal-contact-card__header {
+        grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      }
+    }
+
+    @media (min-width: 700px) and (max-width: 1023px) {
+      .legal-contact-card__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .legal-contact-card__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 899px) {
+      .legal-contact-card {
+        border-radius: 28px;
+      }
+    }
+
+    @media (max-width: 699px) {
+      .legal-contact-item {
+        padding: 1.05rem;
+        border-radius: 22px;
+      }
+
+      .footer-social-card {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .footer-social-icons {
+        width: 100%;
+      }
+
+      .section-frame {
+        border-radius: 30px;
+      }
+
+      .hero-trustbar {
+        grid-template-columns: 1fr;
+      }
+
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-slider-ui {
+        top: 5rem;
+        right: 0.75rem;
+      }
+
+      .hero-slider-nav,
+      .hero-slider-dots {
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "InsuranceAgency",
+          "@id": "https://kasiassur.fr/#organization",
+          "name": "KASIASSUR",
+          "legalName": "KASIASSUR",
+          "url": "https://kasiassur.fr/",
+          "logo": "https://kasiassur.fr/img/logo.png",
+          "image": "https://kasiassur.fr/img/hero-bg-1600.jpg",
+          "description": "Courtier en assurance a Paris pour les particuliers et les professionnels en France.",
+          "email": "contact@kasiassur.fr",
+          "telephone": "+33 7 44 30 65 08",
+          "priceRange": "EUR",
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "50 avenue des Champs-Elysees",
+            "postalCode": "75008",
+            "addressLocality": "Paris",
+            "addressCountry": "FR"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "telephone": "+33 7 44 30 65 08",
+              "email": "contact@kasiassur.fr",
+              "areaServed": "FR",
+              "availableLanguage": ["fr", "en", "es"]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "claims support",
+              "email": "reclamation@kasiassur.fr",
+              "areaServed": "FR",
+              "availableLanguage": ["fr", "en", "es"]
+            }
+          ],
+          "identifier": [
+            {
+              "@type": "PropertyValue",
+              "propertyID": "ORIAS",
+              "value": "26004041"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "SIREN",
+              "value": "100 898 089"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "VAT",
+              "value": "FR751001898089"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://kasiassur.fr/#website",
+          "url": "https://kasiassur.fr/",
+          "name": "KASIASSUR",
+          "publisher": {
+            "@id": "https://kasiassur.fr/#organization"
+          },
+          "inLanguage": "fr"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://kasiassur.fr/#webpage",
+          "url": "https://kasiassur.fr/",
+          "name": "KASIASSUR | Courtier en assurance a Paris pour auto, habitation, sante et professionnels",
+          "description": "KASIASSUR accompagne particuliers et professionnels en France pour l'assurance auto, habitation, sante et professionnelle.",
+          "isPartOf": {
+            "@id": "https://kasiassur.fr/#website"
+          },
+          "about": {
+            "@id": "https://kasiassur.fr/#organization"
+          },
+          "inLanguage": "fr"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://kasiassur.fr/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quelles assurances propose KASIASSUR ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "KASIASSUR accompagne les particuliers et les professionnels sur les besoins en assurance auto, habitation, sante et assurance professionnelle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment contacter le bon service chez KASIASSUR ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le formulaire oriente automatiquement votre demande vers le bon canal: contact@kasiassur.fr pour les demandes generales, gestion@kasiassur.fr pour le suivi de dossier et reclamation@kasiassur.fr pour les reclamations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "KASIASSUR accompagne-t-il les particuliers et les professionnels ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, KASIASSUR accompagne a la fois les particuliers, les independants et les entreprises avec un parcours de courtage digital et un conseil humain."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment demander un devis ou un accompagnement ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vous pouvez utiliser le formulaire de contact pour decrire votre besoin. Le site prepare ensuite un e-mail pre-rempli vers la bonne adresse de contact."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body data-page="index">
+  <div aria-hidden="true" class="hero-grid fixed inset-0"></div>
+  <!-- Header -->
+  <header class="sticky top-3 z-50 pt-3">
+    <div class="section-shell">
+      <div class="glass-panel rounded-[30px] px-4 py-3 sm:px-5 lg:px-6">
+        <div class="flex items-center justify-between gap-3">
+          <a href="#accueil" class="flex min-w-0 items-center gap-3" aria-label="Retour a l'accueil KASIASSUR">
+            <img
+              src="img/logo.png"
+              alt="Logo KASIASSUR"
+              width="1024"
+              height="1024"
+              decoding="async"
+              class="h-12 w-12 rounded-2xl object-cover shadow-card"
+            >
+            <div class="min-w-0">
+              <p class="truncate font-display text-lg font-bold text-brand-purple">KASIASSUR</p>
+              <p class="truncate text-xs font-semibold text-slate-500 sm:text-sm" data-i18n="brand.tagline">Votre partenaire de confiance</p>
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-7 md:flex" aria-label="Navigation principale">
+            <a href="#solutions" class="nav-link" data-i18n="nav.solutions">Solutions</a>
+            <a href="#methode" class="nav-link" data-i18n="nav.method">Methode</a>
+            <a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <div class="language-switcher" data-language-switcher aria-label="Selecteur de langue">
+              <button type="button" class="language-switcher__button is-active" data-lang="fr" aria-pressed="true">FR</button>
+              <button type="button" class="language-switcher__button" data-lang="en" aria-pressed="false">EN</button>
+              <button type="button" class="language-switcher__button" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+
+            <div class="hidden items-center gap-3 md:flex">
+            <a
+              href="#contact"
+              class="pulse-cta inline-flex items-center justify-center rounded-full bg-brand-purple px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-brand-purpleSoft focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-cyan/30"
+              data-i18n="nav.clientSpace"
+            >
+              Parler a un conseiller
+            </a>
+          </div>
+          </div>
+
+          <button
+            type="button"
+            id="mobileMenuButton"
+            class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white/90 text-brand-purple shadow-sm transition hover:border-brand-cyan hover:text-brand-cyan focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-cyan/20 md:hidden"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            aria-label="Ouvrir le menu de navigation"
+          >
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden pt-4 md:hidden">
+          <nav class="grid gap-2 rounded-3xl border border-slate-200 bg-white/90 p-3" aria-label="Navigation mobile">
+            <a href="#solutions" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-brand-mist hover:text-brand-purple" data-i18n="nav.solutions">Solutions</a>
+            <a href="#methode" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-brand-mist hover:text-brand-purple" data-i18n="nav.method">Methode</a>
+            <a href="#faq" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-brand-mist hover:text-brand-purple" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" class="rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-brand-mist hover:text-brand-purple" data-i18n="nav.contact">Contact</a>
+            <a href="#contact" class="mt-2 inline-flex items-center justify-center rounded-2xl bg-brand-purple px-4 py-3 text-sm font-bold text-white" data-i18n="nav.clientSpace">Parler a un conseiller</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Hero -->
+    <section id="accueil" class="relative overflow-hidden pb-20 pt-12 sm:pb-24 sm:pt-16 lg:pb-28 lg:pt-24">
+      <div aria-hidden="true" class="hero-orb left-0 top-24 h-64 w-64 bg-brand-cyan/15"></div>
+      <div aria-hidden="true" class="hero-orb right-10 top-12 h-72 w-72 bg-brand-purple/20"></div>
+
+      <div class="section-shell">
+        <div class="grid items-center gap-10 lg:grid-cols-[1.05fr,0.95fr] lg:gap-14">
+          <div class="relative z-10">
+            <p class="hero-badge eyebrow" data-i18n="hero.badge">Courtage en assurance digital</p>
+
+            <h1 class="mt-5 font-display text-5xl font-bold leading-[0.94] tracking-[-0.05em] text-brand-purple sm:text-6xl lg:text-7xl">
+              <span class="hero-line block" data-i18n="hero.title.1">La protection</span>
+              <span class="hero-line block" data-i18n="hero.title.2">avec la</span>
+              <span class="hero-line block text-brand-cyan" data-i18n="hero.title.3">precision</span>
+              <span class="hero-line block" data-i18n="hero.title.4">d'un vrai</span>
+              <span class="hero-line block" data-i18n="hero.title.5">conseil.</span>
+            </h1>
+
+            <p class="hero-copy mt-6 max-w-2xl text-balance text-base leading-8 text-slate-600 sm:text-lg" data-i18n="hero.copy">
+              KASIASSUR simplifie le courtage avec une experience premium, un accompagnement humain
+              et des parcours 100% digitalises. Nous aidons particuliers et professionnels a choisir
+              des solutions d'assurance auto, habitation, sante et professionnelle claires, rapides a activer
+              et rassurantes a vivre.
+            </p>
+
+            <div class="hero-cta mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-full bg-brand-purple px-6 py-3.5 text-sm font-bold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-brand-purpleSoft focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-cyan/25"
+                data-i18n="hero.cta.expert"
+              >
+                Parler a un expert
+              </a>
+              <a
+                href="#solutions"
+                class="inline-flex items-center justify-center rounded-full border border-brand-purple/15 bg-white/85 px-6 py-3.5 text-sm font-bold text-brand-purple transition hover:-translate-y-0.5 hover:border-brand-cyan/40 hover:text-brand-cyan focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-cyan/20"
+                data-i18n="hero.cta.modules"
+              >
+                Decouvrir nos modules
+              </a>
+            </div>
+
+            <div class="hero-metrics mt-8 grid gap-3 sm:grid-cols-3">
+              <article class="metric-card glass-panel rounded-[24px] p-4">
+                <p class="text-sm font-bold text-brand-purple" data-i18n="hero.metric1.title">Conseil humain</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600" data-i18n="hero.metric1.desc">Un courtier accessible, pas une interface froide.</p>
+              </article>
+              <article class="metric-card glass-panel rounded-[24px] p-4">
+                <p class="text-sm font-bold text-brand-purple" data-i18n="hero.metric2.title">Routing intelligent</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600" data-i18n="hero.metric2.desc">Chaque demande arrive a la bonne equipe.</p>
+              </article>
+              <article class="metric-card glass-panel rounded-[24px] p-4">
+                <p class="text-sm font-bold text-brand-purple" data-i18n="hero.metric3.title">Parcours fluides</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600" data-i18n="hero.metric3.desc">Mobile, tablette et desktop sans friction.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="hero-float relative mx-auto max-w-[640px]">
+              <div class="glass-panel relative overflow-hidden rounded-[36px] border border-white/70 p-3 shadow-card sm:p-4">
+                <div class="absolute inset-x-5 top-5 z-20 flex items-center justify-between rounded-full bg-brand-purple/92 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-card">
+                  <span data-i18n="hero.media.badge">Accompagnement premium</span>
+                  <span class="text-brand-cyan" data-i18n="hero.media.badgeAccent">100% digital</span>
+                </div>
+
+                <div class="aspect-[4/5] overflow-hidden rounded-[28px] bg-brand-purple">
+                  <div id="heroSlider" class="hero-slider" aria-roledescription="carousel" aria-label="Visuels KASIASSUR">
+                    <div class="hero-slides">
+                      <figure class="hero-slide is-active" data-hero-slide aria-hidden="false">
+                        <img
+                          src="img/hero-bg-1600.jpg"
+                          alt="Couple en rendez-vous avec un conseiller KASIASSUR"
+                          width="6720"
+                          height="4480"
+                          fetchpriority="high"
+                          decoding="async"
+                        >
+                      </figure>
+                      <figure class="hero-slide" data-hero-slide aria-hidden="true">
+                        <img
+                          src="img/1-1600.jpg"
+                          alt="Couple accompagne par un conseiller KASIASSUR lors d'un rendez-vous"
+                          width="6000"
+                          height="4000"
+                          loading="lazy"
+                          decoding="async"
+                        >
+                      </figure>
+                      <figure class="hero-slide" data-hero-slide aria-hidden="true">
+                        <img
+                          src="img/2-1200.jpg"
+                          alt="Illustration de protection et centre de relation client KASIASSUR"
+                          width="1024"
+                          height="1024"
+                          loading="lazy"
+                          decoding="async"
+                        >
+                      </figure>
+                      <figure class="hero-slide" data-hero-slide aria-hidden="true">
+                        <img
+                          src="img/3-1600.jpg"
+                          alt="Illustration d'equipe KASIASSUR en accompagnement et gestion des parcours"
+                          width="1408"
+                          height="768"
+                          loading="lazy"
+                          decoding="async"
+                        >
+                      </figure>
+                    </div>
+
+                    <div class="hero-slider-ui">
+                      <div class="hero-slider-nav" aria-label="Navigation du slider">
+                        <button type="button" class="hero-slider-button" data-hero-prev aria-label="Afficher le visuel precedent">
+                          <svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                          </svg>
+                        </button>
+                        <button type="button" class="hero-slider-button" data-hero-next aria-label="Afficher le visuel suivant">
+                          <svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m9 6 6 6-6 6"></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="hero-slider-dots" aria-label="Selection des visuels">
+                        <button type="button" class="hero-slider-dot is-active" data-hero-dot="0" aria-label="Afficher le visuel 1" aria-pressed="true"></button>
+                        <button type="button" class="hero-slider-dot" data-hero-dot="1" aria-label="Afficher le visuel 2" aria-pressed="false"></button>
+                        <button type="button" class="hero-slider-dot" data-hero-dot="2" aria-label="Afficher le visuel 3" aria-pressed="false"></button>
+                        <button type="button" class="hero-slider-dot" data-hero-dot="3" aria-label="Afficher le visuel 4" aria-pressed="false"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="absolute bottom-6 left-6 right-6 z-20 rounded-[28px] bg-white/88 p-4 shadow-soft backdrop-blur-xl sm:left-8 sm:right-8 sm:p-5">
+                  <p class="eyebrow !tracking-[0.18em]" data-i18n="hero.media.caption.badge">Experience de confiance</p>
+                  <p class="mt-2 text-sm font-bold text-brand-purple sm:text-base" data-i18n="hero.media.caption.text">
+                    Une relation claire, rassurante et suivie dans la duree.
+                  </p>
+                </div>
+              </div>
+
+              <div class="absolute -left-2 top-20 hidden w-44 rounded-[28px] bg-white/85 p-4 shadow-soft backdrop-blur-xl sm:block">
+                <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-brand-cyan" data-i18n="hero.media.sideFast.title">Traitement rapide</p>
+                <p class="mt-2 text-sm font-semibold leading-6 text-brand-purple" data-i18n="hero.media.sideFast.text">Orientation vers la bonne boite mail des le premier message.</p>
+              </div>
+
+              <div class="absolute -right-2 bottom-20 hidden w-40 rounded-[28px] bg-brand-purple/92 p-4 text-white shadow-card backdrop-blur-xl sm:block">
+                <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-brand-cyan" data-i18n="hero.media.sideAvailable.title">Disponible</p>
+                <p class="mt-2 text-sm font-semibold leading-6 text-white/90" data-i18n="hero.media.sideAvailable.text">Accompagnement clair pour particuliers et professionnels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-trustbar" data-aos="fade-up" data-aos-delay="140">
+          <article>
+            <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-brand-cyan" data-i18n="hero.trust.1.title">Clarte operationnelle</p>
+            <p class="mt-3 text-sm font-semibold leading-6 text-brand-purple" data-i18n="hero.trust.1.desc">Des parcours lisibles, des priorites visibles et un ton plus rassurant des les premiers ecrans.</p>
+          </article>
+          <article>
+            <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-brand-cyan" data-i18n="hero.trust.2.title">Confiance immediate</p>
+            <p class="mt-3 text-sm font-semibold leading-6 text-brand-purple" data-i18n="hero.trust.2.desc">Les signaux de credibilite, de contact et de conformite sont mieux exposes tout au long du site.</p>
+          </article>
+          <article>
+            <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-brand-cyan" data-i18n="hero.trust.3.title">Experience premium</p>
+            <p class="mt-3 text-sm font-semibold leading-6 text-brand-purple" data-i18n="hero.trust.3.desc">Une presentation plus nette sur mobile comme sur desktop, avec plus d'air et de coherence visuelle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="pb-20 sm:pb-24 lg:pb-28">
+      <div class="section-shell">
+        <div class="section-frame section-frame--light">
+          <div class="section-heading-card mx-auto max-w-3xl text-center" data-aos="fade-up">
+            <p class="eyebrow" data-i18n="solutions.badge">Nos solutions</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="solutions.title">
+              Quatre modules qui protegent l'essentiel.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-slate-600 sm:text-lg" data-i18n="solutions.desc">
+              Chaque offre se lit facilement, se compare rapidement et s'inscrit dans une logique de conseil.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            <article class="module-card magnetic-card" data-aos="fade-up" data-aos-delay="0" tabindex="0">
+              <div class="card-glow" data-card-glow></div>
+              <img src="img/auto.png" alt="Illustration du module assurance auto KASIASSUR" width="375" height="306" loading="lazy" decoding="async" class="h-44 w-full rounded-[24px] object-cover">
+              <div class="mt-5">
+                <p class="eyebrow" data-i18n="solutions.auto.badge">Auto</p>
+                <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="solutions.auto.title">Mobilite protegee</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="solutions.auto.desc">
+                  Des garanties simples a activer pour rouler avec plus de lisibilite et moins de friction.
+                </p>
+              </div>
+            </article>
+
+            <article class="module-card magnetic-card" data-aos="fade-up" data-aos-delay="80" tabindex="0">
+              <div class="card-glow" data-card-glow></div>
+              <img src="img/home.png" alt="Illustration du module assurance habitation KASIASSUR" width="400" height="345" loading="lazy" decoding="async" class="h-44 w-full rounded-[24px] object-cover">
+              <div class="mt-5">
+                <p class="eyebrow" data-i18n="solutions.home.badge">Habitation</p>
+                <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="solutions.home.title">Patrimoine securise</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="solutions.home.desc">
+                  Une couverture plus lisible pour proteger votre logement, vos biens et votre quotidien.
+                </p>
+              </div>
+            </article>
+
+            <article class="module-card magnetic-card" data-aos="fade-up" data-aos-delay="160" tabindex="0">
+              <div class="card-glow" data-card-glow></div>
+              <img src="img/health.png" alt="Illustration du module assurance sante KASIASSUR" width="365" height="307" loading="lazy" decoding="async" class="h-44 w-full rounded-[24px] object-cover">
+              <div class="mt-5">
+                <p class="eyebrow" data-i18n="solutions.health.badge">Sante</p>
+                <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="solutions.health.title">Protection familiale</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="solutions.health.desc">
+                  Une approche flexible pour aligner la protection sante avec vos besoins de vie reels.
+                </p>
+              </div>
+            </article>
+
+            <article class="module-card magnetic-card" data-aos="fade-up" data-aos-delay="240" tabindex="0">
+              <div class="card-glow" data-card-glow></div>
+              <img src="img/pro.png" alt="Illustration du module assurance professionnelle KASIASSUR" width="411" height="316" loading="lazy" decoding="async" class="h-44 w-full rounded-[24px] object-cover">
+              <div class="mt-5">
+                <p class="eyebrow" data-i18n="solutions.pro.badge">Professionnels</p>
+                <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="solutions.pro.title">Activite maitrisee</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="solutions.pro.desc">
+                  Des solutions concues pour independants, dirigeants et structures qui veulent une vraie reactivite.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Methode -->
+    <section id="methode" class="pb-20 sm:pb-24 lg:pb-28">
+      <div class="section-shell">
+        <div class="section-frame">
+          <div class="grid gap-6 lg:grid-cols-[0.95fr,1.05fr]">
+            <div class="glass-panel p-6 sm:p-8" data-aos="fade-right">
+            <p class="eyebrow" data-i18n="method.badge">Notre methode</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="method.title">
+              Une experience plus claire a chaque etape.
+            </h2>
+            <div class="mt-8 space-y-5">
+              <div class="method-step rounded-[24px] border border-slate-200 bg-white/90 p-5">
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="method.step1.badge">Etape 1</p>
+                <h3 class="mt-3 text-xl font-bold text-brand-purple" data-i18n="method.step1.title">Cadrer le besoin</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600" data-i18n="method.step1.desc">Nous traduisons votre situation en priorites de protection concretes.</p>
+              </div>
+              <div class="method-step rounded-[24px] border border-slate-200 bg-white/90 p-5">
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="method.step2.badge">Etape 2</p>
+                <h3 class="mt-3 text-xl font-bold text-brand-purple" data-i18n="method.step2.title">Comparer avec clarte</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600" data-i18n="method.step2.desc">Les garanties se lisent vite, sans jargon opaque ni zones de doute inutiles.</p>
+              </div>
+              <div class="method-step rounded-[24px] border border-slate-200 bg-white/90 p-5">
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="method.step3.badge">Etape 3</p>
+                <h3 class="mt-3 text-xl font-bold text-brand-purple" data-i18n="method.step3.title">Accompagner dans la duree</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600" data-i18n="method.step3.desc">Gestion, demande ou reclamation: chaque sujet suit un canal clairement route.</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="glass-panel overflow-hidden p-6 sm:p-8" data-aos="fade-left">
+              <div class="grid gap-6 lg:grid-cols-[1.05fr,0.95fr]">
+                <div class="order-2 space-y-5 lg:order-1">
+                  <div class="rounded-[24px] bg-brand-purple p-5 text-white shadow-card">
+                    <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="method.why.badge">Pourquoi ca change tout</p>
+                    <p class="mt-3 text-sm leading-7 text-white/85" data-i18n="method.why.desc">
+                      Le digital accelerera toujours mieux un bon conseil qu'il ne remplacera un mauvais parcours.
+                    </p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="metric-card rounded-[24px] border border-slate-200 bg-white/90 p-5">
+                      <p class="text-3xl font-extrabold text-brand-purple">3</p>
+                      <p class="mt-2 text-sm leading-6 text-slate-600" data-i18n="method.stat1.desc">adresses dediees pour router clairement vos demandes.</p>
+                    </div>
+                    <div class="metric-card rounded-[24px] border border-slate-200 bg-white/90 p-5">
+                      <p class="text-3xl font-extrabold text-brand-purple">24/7</p>
+                      <p class="mt-2 text-sm leading-6 text-slate-600" data-i18n="method.stat2.desc">site responsive et disponible sur tous vos ecrans.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="order-1 overflow-hidden rounded-[30px] bg-brand-purple lg:order-2">
+                  <img
+                    src="img/hero-bg-1600.jpg"
+                    alt="Scene de rendez-vous conseil pour illustrer la methode KASIASSUR"
+                    width="6720"
+                    height="4480"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-full min-h-[360px] w-full object-cover"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- France SEO -->
+    <section id="france" class="pb-20 sm:pb-24 lg:pb-28">
+      <div class="section-shell">
+        <div class="section-frame section-frame--light">
+          <div class="section-heading-card mx-auto max-w-4xl text-center" data-aos="fade-up">
+            <p class="eyebrow" data-i18n="seo.badge">France & conformite</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="seo.title">
+              Courtier en assurance en France pour particuliers et professionnels.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-slate-600 sm:text-lg" data-i18n="seo.desc">
+              Base a Paris, KASIASSUR accompagne les besoins en assurance auto, habitation, sante et assurance professionnelle avec un parcours digital, un conseil humain et des informations legales verifiables.
+            </p>
+          </div>
+
+          <div class="mt-10 grid gap-5 md:grid-cols-3">
+            <article class="metric-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="0">
+              <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="seo.card1.badge">Immatriculation</p>
+              <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="seo.card1.title">Numero ORIAS verifiable</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="seo.card1.desc">26004041, verifiable sur www.orias.fr pour renforcer la confiance et la transparence.</p>
+            </article>
+
+            <article class="metric-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="80">
+              <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="seo.card2.badge">Local</p>
+              <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="seo.card2.title">Ancrage Paris, service France</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="seo.card2.desc">Siege social a Paris et accompagnement des particuliers et professionnels sur l'ensemble du territoire francais.</p>
+            </article>
+
+            <article class="metric-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="160">
+              <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="seo.card3.badge">Confiance</p>
+              <h3 class="mt-3 text-2xl font-bold text-brand-purple" data-i18n="seo.card3.title">Signaux legaux et contacts clairs</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="seo.card3.desc">SIREN, ORIAS, mentions legales, politique de confidentialite et canaux de contact visibles pour rassurer les visiteurs et Google.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="pb-20 sm:pb-24 lg:pb-28">
+      <div class="section-shell">
+        <div class="section-frame section-frame--light">
+          <div class="section-heading-card mx-auto max-w-4xl text-center" data-aos="fade-up">
+            <p class="eyebrow" data-i18n="reviews.badge">Avis clients</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="reviews.title">
+              Des retours clients qui renforcent la confiance.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-slate-600 sm:text-lg" data-i18n="reviews.desc">
+              Un service clair, un accompagnement serieux et un parcours simple : voici ce que retiennent nos clients.
+            </p>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="review-stars" role="img" aria-label="5 etoiles sur 5" data-i18n-aria-label="reviews.starsLabel">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+              </div>
+              <p class="review-text" data-i18n="reviews.review1.text">Service rapide et professionnel. Tres bonne experience globale.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">MB</span>
+                <p class="review-name" data-i18n="reviews.review1.name">Mohamed Benali</p>
+              </div>
+            </article>
+
+            <article class="review-card" data-aos="fade-up" data-aos-delay="80">
+              <div class="review-stars" role="img" aria-label="5 etoiles sur 5" data-i18n-aria-label="reviews.starsLabel">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+              </div>
+              <p class="review-text" data-i18n="reviews.review2.text">Conseils clairs et accompagnement serieux du debut a la fin.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">SL</span>
+                <p class="review-name" data-i18n="reviews.review2.name">Sarah Lemaire</p>
+              </div>
+            </article>
+
+            <article class="review-card" data-aos="fade-up" data-aos-delay="160">
+              <div class="review-stars" role="img" aria-label="5 etoiles sur 5" data-i18n-aria-label="reviews.starsLabel">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 2.75 2.85 5.77 6.37.93-4.61 4.49 1.09 6.35L12 17.3l-5.7 2.99 1.09-6.35-4.61-4.49 6.37-.93L12 2.75Z"></path></svg>
+              </div>
+              <p class="review-text" data-i18n="reviews.review3.text">Processus simple, rapide et efficace. Je recommande.</p>
+              <div class="review-author">
+                <span class="review-avatar" aria-hidden="true">YK</span>
+                <p class="review-name" data-i18n="reviews.review3.name">Yassine Kabbaj</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="pb-20 sm:pb-24 lg:pb-28">
+      <div class="section-shell">
+        <div class="section-frame section-frame--light">
+          <div class="section-heading-card mx-auto max-w-3xl text-center" data-aos="fade-up">
+            <p class="eyebrow" data-i18n="faq.badge">Questions frequentes</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="faq.title">
+              Reponses claires pour mieux choisir votre assurance.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-slate-600 sm:text-lg" data-i18n="faq.desc">
+              Retrouvez rapidement les informations les plus utiles pour choisir votre couverture
+              et comprendre le fonctionnement du parcours KASIASSUR.
+            </p>
+          </div>
+
+          <div class="mx-auto mt-12 grid max-w-5xl gap-5 lg:grid-cols-2">
+            <article class="faq-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="0">
+              <h3 class="text-2xl font-bold text-brand-purple" data-i18n="faq.q1.title">Quelles assurances propose KASIASSUR ?</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base" data-i18n="faq.q1.desc">
+                KASIASSUR accompagne les particuliers et les professionnels sur les besoins en assurance auto,
+                habitation, sante et assurance professionnelle, avec une lecture plus simple des garanties.
+              </p>
+            </article>
+
+            <article class="faq-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="80">
+              <h3 class="text-2xl font-bold text-brand-purple" data-i18n="faq.q2.title">Comment contacter le bon service ?</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base" data-i18n="faq.q2.desc">
+                Le formulaire oriente votre message vers le bon destinataire: contact general, gestion de dossier
+                ou reclamation, afin d'accelerer le traitement de votre demande.
+              </p>
+            </article>
+
+            <article class="faq-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="160">
+              <h3 class="text-2xl font-bold text-brand-purple" data-i18n="faq.q3.title">KASIASSUR accompagne-t-il les particuliers et les professionnels ?</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base" data-i18n="faq.q3.desc">
+                Oui. Le cabinet accompagne les particuliers, les independants, les dirigeants et les entreprises
+                qui recherchent un courtier en assurance digital avec un vrai conseil humain.
+              </p>
+            </article>
+
+            <article class="faq-card glass-panel rounded-[28px] p-6" data-aos="fade-up" data-aos-delay="240">
+              <h3 class="text-2xl font-bold text-brand-purple" data-i18n="faq.q4.title">Comment demander un devis ou un accompagnement ?</h3>
+              <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base" data-i18n="faq.q4.desc">
+                Vous pouvez decrire votre besoin depuis le formulaire de contact. Le site verifie les informations
+                saisies puis prepare un e-mail pre-rempli vers la bonne adresse KASIASSUR.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="pb-20 sm:pb-24 lg:pb-28">
+      <div class="section-shell">
+        <div class="section-frame">
+          <div class="grid gap-6 xl:grid-cols-[1.02fr,0.98fr]">
+          <div class="contact-panel-card glass-panel p-6 sm:p-8" data-aos="fade-up">
+            <p class="eyebrow" data-i18n="contact.badge">Contact</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="contact.title">
+              Entrez en relation avec la bonne equipe.
+            </h2>
+            <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600" data-i18n="contact.desc">
+              Le formulaire reste 100% client-side: il verifie vos champs, prepare votre message,
+              anime la confirmation puis ouvre votre messagerie avec le bon destinataire.
+            </p>
+
+            <form id="contactForm" class="mt-8 space-y-5" novalidate>
+              <div class="grid gap-5 md:grid-cols-2">
+                <div class="field-shell">
+                  <label class="field-label" for="name" data-i18n="contact.form.name.label">Nom et prenom</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="field-input"
+                    placeholder="Votre identite"
+                    data-i18n-placeholder="contact.form.name.placeholder"
+                    required
+                    aria-describedby="nameError"
+                  >
+                  <p id="nameError" class="field-error" aria-live="polite"></p>
+                </div>
+
+                <div class="field-shell">
+                  <label class="field-label" for="subject" data-i18n="contact.form.subject.label">Sujet</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    class="field-input"
+                    required
+                    aria-describedby="subjectHelp"
+                  >
+                    <option value="general" data-i18n="contact.form.subject.general">Information generale</option>
+                    <option value="gestion" data-i18n="contact.form.subject.gestion">Gestion de dossier</option>
+                    <option value="reclamation" data-i18n="contact.form.subject.reclamation">Service reclamation</option>
+                  </select>
+                  <p id="subjectHelp" class="text-sm text-slate-500" data-i18n="contact.form.subject.help">Le message sera route automatiquement.</p>
+                </div>
+              </div>
+
+              <div class="grid gap-5 md:grid-cols-2">
+                <div class="field-shell">
+                  <label class="field-label" for="email" data-i18n="contact.form.email.label">Adresse e-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    inputmode="email"
+                    class="field-input"
+                    placeholder="vous@entreprise.fr"
+                    data-i18n-placeholder="contact.form.email.placeholder"
+                    required
+                    aria-describedby="emailError emailHelp"
+                  >
+                  <p id="emailHelp" class="text-sm text-slate-500" data-i18n="contact.form.email.help">Format attendu: nom@domaine.fr</p>
+                  <p id="emailError" class="field-error" aria-live="polite"></p>
+                </div>
+
+                <div class="field-shell">
+                  <label class="field-label" for="phone" data-i18n="contact.form.phone.label">Telephone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    inputmode="tel"
+                    class="field-input"
+                    placeholder="+33 6 12 34 56 78"
+                    data-i18n-placeholder="contact.form.phone.placeholder"
+                    required
+                    aria-describedby="phoneError phoneHelp"
+                  >
+                  <p id="phoneHelp" class="text-sm text-slate-500" data-i18n="contact.form.phone.help">Accepte les formats internationaux avec espaces.</p>
+                  <p id="phoneError" class="field-error" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <div class="field-shell">
+                <label class="field-label" for="message" data-i18n="contact.form.message.label">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="field-input min-h-[150px] resize-y"
+                  placeholder="Decrivez votre besoin, votre projet ou votre demande."
+                  data-i18n-placeholder="contact.form.message.placeholder"
+                  aria-describedby="messageHelp"
+                ></textarea>
+                <p id="messageHelp" class="text-sm text-slate-500" data-i18n="contact.form.message.help">Plus votre contexte est clair, plus la reponse sera utile.</p>
+              </div>
+
+              <div class="grid gap-4 lg:grid-cols-[1fr,auto] lg:items-center">
+                <div class="rounded-[26px] bg-brand-purple px-5 py-4 text-white shadow-card">
+                  <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="contact.form.destination.badge">Destination automatique</p>
+                  <p id="destinationLabel" class="mt-2 text-sm font-semibold text-white/80">Information generale</p>
+                  <p id="destinationEmail" class="mt-1 text-lg font-extrabold">contact@kasiassur.fr</p>
+                </div>
+
+                <button
+                  id="submitButton"
+                  type="submit"
+                  class="inline-flex min-h-[56px] items-center justify-center rounded-full bg-brand-cyan px-7 py-3 text-sm font-extrabold text-brand-purple transition hover:-translate-y-0.5 hover:bg-brand-cyanSoft focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-cyan/30"
+                >
+                  <span id="submitButtonText" data-i18n="contact.form.submit">Envoyer ma demande</span>
+                </button>
+              </div>
+
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p id="formStatus" class="text-sm font-medium text-slate-600" aria-live="polite" data-i18n="contact.form.status.idle">
+                  Aucun envoi serveur: le site prepare un e-mail vers la bonne adresse.
+                </p>
+                <div id="formSuccess" class="success-chip" data-i18n="contact.form.success">
+                  Message pret. Ouverture de votre messagerie...
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-panel-card glass-panel p-6 sm:p-8" data-aos="fade-up" data-aos-delay="100">
+            <p class="eyebrow" data-i18n="contact.routes.badge">Routing professionnel</p>
+            <h3 class="mt-4 font-display text-4xl font-bold tracking-[-0.04em] text-brand-purple sm:text-5xl" data-i18n="contact.routes.title">
+              Trois canaux, zero confusion.
+            </h3>
+            <p class="mt-5 text-base leading-8 text-slate-600" data-i18n="contact.routes.desc">
+              Les couleurs premium restent contrastees pour garantir lisibilite, accessibilite et confiance.
+            </p>
+
+            <div class="mt-8 space-y-4">
+              <article class="route-card is-active" data-route="general">
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="contact.routes.general.badge">General</p>
+                <p class="mt-3 text-xl font-bold text-brand-purple" data-i18n="contact.routes.general.title">Support &amp; information</p>
+                <p class="route-text mt-2 text-sm leading-7 text-slate-600" data-i18n="contact.routes.general.desc">Pour toute demande generale sur les solutions, devis ou orientation.</p>
+                <a class="route-mail mt-3 inline-flex text-sm font-extrabold text-brand-purple" href="mailto:contact@kasiassur.fr">contact@kasiassur.fr</a>
+              </article>
+
+              <article class="route-card" data-route="gestion">
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="contact.routes.gestion.badge">Gestion</p>
+                <p class="mt-3 text-xl font-bold text-brand-purple" data-i18n="contact.routes.gestion.title">Suivi de dossier</p>
+                <p class="route-text mt-2 text-sm leading-7 text-slate-600" data-i18n="contact.routes.gestion.desc">Pour la gestion courante, les documents, avenants ou questions contractuelles.</p>
+                <a class="route-mail mt-3 inline-flex text-sm font-extrabold text-brand-purple" href="mailto:gestion@kasiassur.fr">gestion@kasiassur.fr</a>
+              </article>
+
+              <article class="route-card" data-route="reclamation">
+                <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-brand-cyan" data-i18n="contact.routes.reclamation.badge">Reclamation</p>
+                <p class="mt-3 text-xl font-bold text-brand-purple" data-i18n="contact.routes.reclamation.title">Qualite de service</p>
+                <p class="route-text mt-2 text-sm leading-7 text-slate-600" data-i18n="contact.routes.reclamation.desc">Pour signaler un probleme, une insatisfaction ou une demande d'escalade.</p>
+                <a class="route-mail mt-3 inline-flex text-sm font-extrabold text-brand-purple" href="mailto:reclamation@kasiassur.fr">reclamation@kasiassur.fr</a>
+              </article>
+            </div>
+
+          </aside>
+          </div>
+
+          <section class="legal-contact-card" aria-labelledby="legalInfoTitle">
+          <div class="legal-contact-card__header">
+            <div>
+              <p class="eyebrow" data-i18n="legal.badge">Contact &amp; informations legales</p>
+              <h3 id="legalInfoTitle" class="mt-4 font-display text-3xl font-bold tracking-[-0.04em] text-brand-purple sm:text-4xl" data-i18n="legal.title">
+                Coordonnees professionnelles et identifiants d'entreprise.
+              </h3>
+            </div>
+            <p class="legal-contact-card__lead" data-i18n="legal.desc">
+              Des informations claires, visibles et facilement verifiables pour renforcer la confiance
+              a chaque prise de contact.
+            </p>
+          </div>
+
+          <dl class="legal-contact-card__grid">
+            <div class="legal-contact-item">
+              <span class="legal-contact-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 4.5h3.1l1.35 3.4-1.78 1.79a15.34 15.34 0 0 0 6.63 6.63l1.79-1.78L19.5 16V19a2 2 0 0 1-2.18 2A15.8 15.8 0 0 1 3 6.68 2 2 0 0 1 5 4.5Z"></path>
+                </svg>
+              </span>
+              <div>
+                <dt data-i18n="legal.phone.label">Telephone professionnel</dt>
+                <dd><a href="tel:+33744306508" aria-label="Appeler KASIASSUR au +33 7 44 30 65 08">+33 7 44 30 65 08</a></dd>
+              </div>
+            </div>
+
+            <div class="legal-contact-item">
+              <span class="legal-contact-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 3.75h8a2 2 0 0 1 2 2v12.5a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5.75a2 2 0 0 1 2-2Z"></path>
+                  <path d="M9 8.25h6"></path>
+                  <path d="M9 12h6"></path>
+                  <path d="m9.25 15.75 1.75 1.75 3.75-3.75"></path>
+                </svg>
+              </span>
+              <div>
+                <dt data-i18n="legal.orias.label">Numero ORIAS</dt>
+                <dd>26004041</dd>
+              </div>
+            </div>
+
+            <div class="legal-contact-item">
+              <span class="legal-contact-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 20.25h15"></path>
+                  <path d="M6 20.25V8.25l6-3 6 3v12"></path>
+                  <path d="M9 11.25h.01"></path>
+                  <path d="M9 14.75h.01"></path>
+                  <path d="M15 11.25h.01"></path>
+                  <path d="M15 14.75h.01"></path>
+                  <path d="M11.25 20.25v-3.5h1.5v3.5"></path>
+                </svg>
+              </span>
+              <div>
+                <dt data-i18n="legal.siren.label">Numero SIREN</dt>
+                <dd>100 898 089</dd>
+              </div>
+            </div>
+          </dl>
+
+          <footer class="legal-contact-card__footer" data-i18n="legal.note">
+            Entreprise enregistr&eacute;e en France &ndash; conforme aux r&eacute;glementations en vigueur.
+          </footer>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer id="footer" class="pb-8">
+    <div class="section-shell">
+      <div class="footer-panel glass-panel flex flex-col gap-5 rounded-[32px] px-5 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between" data-aos="fade-up">
+        <div class="flex items-center gap-4">
+          <img src="img/logo.png" alt="Logo KASIASSUR" width="1024" height="1024" loading="lazy" decoding="async" class="h-14 w-14 rounded-2xl object-cover shadow-card">
+          <div>
+            <p class="font-display text-2xl font-bold text-brand-purple">KASIASSUR</p>
+            <p class="text-sm text-slate-600" data-i18n="footer.brand.tagline">Courtage digital, conseil humain, relation durable.</p>
+          </div>
+        </div>
+
+        <div class="footer-proof">
+          <div class="footer-proof-copy">
+            <p class="footer-proof-badge" data-i18n="footer.proof.badge">Verification rapide</p>
+            <p class="footer-proof-desc" data-i18n="footer.proof.desc">
+              Coordonnees directes et identifiants visibles pour verifier KASIASSUR en un coup d'oeil.
+            </p>
+          </div>
+
+          <div class="footer-proof-grid">
+            <article class="footer-proof-card">
+              <span class="footer-proof-label" data-i18n="footer.proof.phone">Telephone</span>
+              <strong class="footer-proof-value"><a href="tel:+33744306508">+33 7 44 30 65 08</a></strong>
+            </article>
+            <article class="footer-proof-card">
+              <span class="footer-proof-label" data-i18n="footer.proof.orias">ORIAS</span>
+              <strong class="footer-proof-value">26004041</strong>
+            </article>
+            <article class="footer-proof-card">
+              <span class="footer-proof-label" data-i18n="footer.proof.siren">SIREN</span>
+              <strong class="footer-proof-value">100 898 089</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 lg:max-w-[340px] lg:justify-end">
+          <div class="footer-social-card" aria-label="Reseaux sociaux KASIASSUR">
+            <div class="footer-social-copy">
+              <span class="footer-social-kicker" data-i18n="footer.social.kicker">Presence sociale</span>
+              <span class="footer-social-title" data-i18n="footer.social.title">LinkedIn, Facebook et Instagram</span>
+            </div>
+
+            <div class="footer-social-icons">
+              <span class="footer-social-icon" aria-hidden="true" title="LinkedIn">
+              <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current" aria-hidden="true">
+                <path d="M6.94 8.5H3.75V20.25h3.19V8.5Zm-1.6-5.25a1.87 1.87 0 1 0 0 3.75 1.87 1.87 0 0 0 0-3.75Zm4.53 5.25v11.75h3.18v-6.17c0-1.63.31-3.2 2.33-3.2 1.99 0 2.02 1.86 2.02 3.3v6.07h3.19v-6.72c0-3.3-.71-5.84-4.57-5.84-1.86 0-3.11 1.02-3.63 1.99h-.05V8.5H9.87Z"></path>
+              </svg>
+              </span>
+              <span class="footer-social-icon" aria-hidden="true" title="Facebook">
+              <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current" aria-hidden="true">
+                <path d="M13.5 21v-7.27h2.46l.37-2.84H13.5V9.08c0-.82.23-1.38 1.4-1.38h1.49V5.15c-.26-.03-1.13-.11-2.15-.11-2.13 0-3.59 1.3-3.59 3.68v2.17H8.25v2.84h2.4V21h2.85Z"></path>
+              </svg>
+              </span>
+              <span class="footer-social-icon" aria-hidden="true" title="Instagram">
+              <svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current" aria-hidden="true" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="4.25"></rect>
+                <circle cx="12" cy="12" r="3.6"></circle>
+                <path d="M17.3 6.7h.01"></path>
+              </svg>
+              </span>
+            </div>
+          </div>
+          <a href="mentions-legales.html" class="rounded-full border border-slate-200 bg-white/85 px-4 py-2 text-sm font-bold text-brand-purple transition hover:border-brand-cyan hover:text-brand-cyan" data-i18n="footer.links.legal">Mentions legales</a>
+          <a href="politique-confidentialite.html" class="rounded-full border border-slate-200 bg-white/85 px-4 py-2 text-sm font-bold text-brand-purple transition hover:border-brand-cyan hover:text-brand-cyan" data-i18n="footer.links.privacy">Confidentialite</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="i18n.js"></script>
+  <script>
+    // Routing principal du formulaire.
+    const contactRoutes = {
+      general: {
+        email: "contact@kasiassur.fr"
+      },
+      gestion: {
+        email: "gestion@kasiassur.fr"
+      },
+      reclamation: {
+        email: "reclamation@kasiassur.fr"
+      }
+    };
+
+    const i18n = window.KASIASSUR_I18N;
+    const t = (key) => (i18n ? i18n.t(key) : key);
+    const tf = (key, values) => (i18n ? i18n.format(key, values) : key);
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const hasGsap = Boolean(window.gsap);
+    const hasAOS = Boolean(window.AOS);
+    const canUseMotion = hasGsap && !prefersReducedMotion;
+    const mobileMenuButton = document.querySelector("#mobileMenuButton");
+    const mobileMenu = document.querySelector("#mobileMenu");
+    const navAnchors = document.querySelectorAll('a[href^="#"]');
+    const heroLines = document.querySelectorAll(".hero-line");
+    const magneticCards = document.querySelectorAll(".magnetic-card");
+    const heroFloat = document.querySelector(".hero-float");
+    const heroSlider = document.querySelector("#heroSlider");
+    const routeCards = document.querySelectorAll("[data-route]");
+
+    const form = document.querySelector("#contactForm");
+    const subjectField = document.querySelector("#subject");
+    const emailField = document.querySelector("#email");
+    const phoneField = document.querySelector("#phone");
+    const nameField = document.querySelector("#name");
+    const messageField = document.querySelector("#message");
+    const destinationLabel = document.querySelector("#destinationLabel");
+    const destinationEmail = document.querySelector("#destinationEmail");
+    const formStatus = document.querySelector("#formStatus");
+    const formSuccess = document.querySelector("#formSuccess");
+    const submitButton = document.querySelector("#submitButton");
+    const submitButtonText = document.querySelector("#submitButtonText");
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const phonePattern = /^\+?[0-9](?:[\s().-]*\d){8,14}$/;
+
+    function getLocalizedRoutes() {
+      return {
+        general: {
+          label: t("contact.form.destination.general"),
+          email: contactRoutes.general.email
+        },
+        gestion: {
+          label: t("contact.form.destination.gestion"),
+          email: contactRoutes.gestion.email
+        },
+        reclamation: {
+          label: t("contact.form.destination.reclamation"),
+          email: contactRoutes.reclamation.email
+        }
+      };
+    }
+
+    // Menu mobile.
+    function toggleMobileMenu(forceState) {
+      const shouldOpen = typeof forceState === "boolean" ? forceState : mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden", !shouldOpen);
+      mobileMenuButton.setAttribute("aria-expanded", shouldOpen ? "true" : "false");
+    }
+
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener("click", () => toggleMobileMenu());
+    }
+
+    if (heroSlider) {
+      const heroSlides = Array.from(heroSlider.querySelectorAll("[data-hero-slide]"));
+      const heroDots = Array.from(heroSlider.querySelectorAll("[data-hero-dot]"));
+      const heroPrev = heroSlider.querySelector("[data-hero-prev]");
+      const heroNext = heroSlider.querySelector("[data-hero-next]");
+      let currentHeroSlide = 0;
+      let heroSliderTimer = null;
+
+      const updateHeroSlider = (nextIndex) => {
+        currentHeroSlide = (nextIndex + heroSlides.length) % heroSlides.length;
+
+        heroSlides.forEach((slide, index) => {
+          const isActive = index === currentHeroSlide;
+          slide.classList.toggle("is-active", isActive);
+          slide.setAttribute("aria-hidden", isActive ? "false" : "true");
+        });
+
+        heroDots.forEach((dot, index) => {
+          const isActive = index === currentHeroSlide;
+          dot.classList.toggle("is-active", isActive);
+          dot.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+      };
+
+      const stopHeroSlider = () => {
+        if (heroSliderTimer) {
+          window.clearInterval(heroSliderTimer);
+          heroSliderTimer = null;
+        }
+      };
+
+      const startHeroSlider = () => {
+        if (heroSlides.length < 2) {
+          return;
+        }
+
+        stopHeroSlider();
+        heroSliderTimer = window.setInterval(() => updateHeroSlider(currentHeroSlide + 1), 4200);
+      };
+
+      heroPrev?.addEventListener("click", () => {
+        updateHeroSlider(currentHeroSlide - 1);
+        startHeroSlider();
+      });
+
+      heroNext?.addEventListener("click", () => {
+        updateHeroSlider(currentHeroSlide + 1);
+        startHeroSlider();
+      });
+
+      heroDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          updateHeroSlider(index);
+          startHeroSlider();
+        });
+      });
+
+      heroSlider.addEventListener("mouseenter", stopHeroSlider);
+      heroSlider.addEventListener("mouseleave", startHeroSlider);
+      heroSlider.addEventListener("focusin", stopHeroSlider);
+      heroSlider.addEventListener("focusout", () => {
+        window.setTimeout(() => {
+          if (!heroSlider.contains(document.activeElement)) {
+            startHeroSlider();
+          }
+        }, 0);
+      });
+
+      updateHeroSlider(0);
+      startHeroSlider();
+    }
+
+    navAnchors.forEach((anchor) => {
+      anchor.addEventListener("click", (event) => {
+        const targetId = anchor.getAttribute("href");
+        if (!targetId || !targetId.startsWith("#")) {
+          return;
+        }
+
+        const target = document.querySelector(targetId);
+        if (!target) {
+          return;
+        }
+
+        event.preventDefault();
+        toggleMobileMenu(false);
+
+        const offsetY = window.innerWidth >= 768 ? 104 : 92;
+
+        window.scrollTo({
+          top: target.offsetTop - offsetY,
+          behavior: prefersReducedMotion ? "auto" : "smooth"
+        });
+      });
+    });
+
+    // Hero motion avec filet de securite pour ne jamais laisser le contenu masque.
+    if (canUseMotion) {
+      const heroSelectors = [
+        ".hero-badge",
+        ".hero-line",
+        ".hero-copy",
+        ".hero-cta > *",
+        ".hero-metrics > *"
+      ];
+
+      const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      heroTl
+        .from(".hero-badge", { y: 22, autoAlpha: 0, duration: 0.55 })
+        .from(heroLines, { y: 44, autoAlpha: 0, duration: 0.72, stagger: 0.08 }, "-=0.28")
+        .from(".hero-copy", { y: 22, autoAlpha: 0, duration: 0.55 }, "-=0.32")
+        .from(".hero-cta > *", { y: 18, autoAlpha: 0, duration: 0.45, stagger: 0.1 }, "-=0.25")
+        .from(".hero-metrics > *", { y: 20, autoAlpha: 0, duration: 0.42, stagger: 0.08 }, "-=0.2")
+        .from(".hero-float", { x: 26, autoAlpha: 0, duration: 0.75 }, "-=0.45");
+
+      const startFloatingHero = () => {
+        gsap.killTweensOf(heroFloat);
+        gsap.to(heroFloat, {
+          y: -14,
+          duration: 2.8,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut"
+        });
+      };
+
+      heroTl.eventCallback("onComplete", () => {
+        gsap.set(heroSelectors, { clearProps: "opacity,visibility,transform" });
+        gsap.set(".hero-float", { clearProps: "opacity,visibility,x" });
+        startFloatingHero();
+      });
+
+      window.setTimeout(() => {
+        gsap.set(heroSelectors, { clearProps: "opacity,visibility,transform" });
+        gsap.set(".hero-float", { clearProps: "opacity,visibility,x" });
+        startFloatingHero();
+      }, 2200);
+    }
+
+    // Animations au scroll.
+    if (hasAOS) {
+      AOS.init({
+        duration: prefersReducedMotion ? 0 : 850,
+        once: true,
+        offset: 90,
+        easing: "ease-out-cubic",
+        disable: prefersReducedMotion
+      });
+    }
+
+    // Synchronise la destination de contact et la carte active.
+    function updateRoute(subject) {
+      const localizedRoutes = getLocalizedRoutes();
+      const route = localizedRoutes[subject] || localizedRoutes.general;
+
+      destinationLabel.textContent = route.label;
+      destinationEmail.textContent = route.email;
+
+      routeCards.forEach((card) => {
+        card.classList.toggle("is-active", card.dataset.route === subject);
+      });
+    }
+
+    updateRoute(subjectField.value);
+
+    // Validation client-side des champs critiques.
+    function showError(field, message) {
+      const errorEl = document.querySelector(`#${field.id}Error`);
+      field.setAttribute("aria-invalid", message ? "true" : "false");
+
+      if (!errorEl) {
+        return;
+      }
+
+      errorEl.textContent = message || "";
+      errorEl.classList.toggle("is-visible", Boolean(message));
+    }
+
+    function validateName() {
+      const value = nameField.value.trim();
+      if (!value) {
+        showError(nameField, t("messages.nameRequired"));
+        return false;
+      }
+
+      showError(nameField, "");
+      return true;
+    }
+
+    function validateEmail() {
+      const value = emailField.value.trim();
+      if (!value) {
+        showError(emailField, t("messages.emailRequired"));
+        return false;
+      }
+
+      if (!emailPattern.test(value)) {
+        showError(emailField, t("messages.emailInvalid"));
+        return false;
+      }
+
+      showError(emailField, "");
+      return true;
+    }
+
+    function validatePhone() {
+      const value = phoneField.value.trim();
+      if (!value) {
+        showError(phoneField, t("messages.phoneRequired"));
+        return false;
+      }
+
+      if (!phonePattern.test(value)) {
+        showError(phoneField, t("messages.phoneInvalid"));
+        return false;
+      }
+
+      showError(phoneField, "");
+      return true;
+    }
+
+    function resetSuccessState() {
+      submitButton.style.backgroundColor = "";
+      submitButton.style.color = "";
+      destinationEmail.style.color = "";
+
+      if (hasGsap) {
+        gsap.killTweensOf([submitButton, formSuccess, destinationEmail]);
+        gsap.set(formSuccess, {
+          autoAlpha: 0,
+          y: 0,
+          scale: 1,
+          clearProps: "transform"
+        });
+      } else {
+        formSuccess.style.opacity = "0";
+        formSuccess.style.visibility = "hidden";
+        formSuccess.style.transform = "none";
+      }
+    }
+
+    function resetFormFeedback() {
+      resetSuccessState();
+      formStatus.textContent = t("contact.form.status.idle");
+      submitButtonText.textContent = t("contact.form.submit");
+    }
+
+    subjectField.addEventListener("change", (event) => {
+      updateRoute(event.target.value);
+      resetFormFeedback();
+    });
+
+    nameField.addEventListener("input", () => {
+      validateName();
+      resetFormFeedback();
+    });
+    emailField.addEventListener("input", () => {
+      validateEmail();
+      resetFormFeedback();
+    });
+    phoneField.addEventListener("input", () => {
+      validatePhone();
+      resetFormFeedback();
+    });
+    messageField.addEventListener("input", resetFormFeedback);
+
+    // Feedback de succes avant ouverture du mailto.
+    function playSuccessAnimation() {
+      resetSuccessState();
+
+      if (!canUseMotion) {
+        formSuccess.style.visibility = "visible";
+        formSuccess.style.opacity = "1";
+        submitButtonText.textContent = t("messages.submitReady");
+        return;
+      }
+
+      gsap.killTweensOf([submitButton, formSuccess]);
+
+      gsap.timeline()
+        .to(submitButton, {
+          scale: 0.97,
+          duration: 0.08
+        })
+        .to(submitButton, {
+          scale: 1,
+          backgroundColor: "#12B981",
+          color: "#ffffff",
+          duration: 0.22
+        })
+        .fromTo(
+          formSuccess,
+          { y: 14, autoAlpha: 0, scale: 0.92 },
+          { y: 0, autoAlpha: 1, scale: 1, duration: 0.42, ease: "back.out(1.7)" },
+          "-=0.05"
+        )
+        .to(
+          destinationEmail,
+          {
+            color: "#8DEAFF",
+            duration: 0.25
+          },
+          "<"
+        );
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      resetFormFeedback();
+
+      const validName = validateName();
+      const validEmail = validateEmail();
+      const validPhone = validatePhone();
+
+      if (!validName || !validEmail || !validPhone) {
+        formStatus.textContent = t("messages.formInvalid");
+        return;
+      }
+
+      const localizedRoutes = getLocalizedRoutes();
+      const route = localizedRoutes[subjectField.value] || localizedRoutes.general;
+      const message = messageField.value.trim();
+      const mailSubject = tf("messages.mailSubject", { label: route.label });
+      const mailBody = [
+        t("messages.mailGreeting"),
+        "",
+        tf("messages.mailIntent", { label: route.label }),
+        "",
+        tf("messages.mailName", { value: nameField.value.trim() }),
+        tf("messages.mailEmail", { value: emailField.value.trim() }),
+        tf("messages.mailPhone", { value: phoneField.value.trim() }),
+        "",
+        t("messages.mailMessage"),
+        message || t("messages.mailSpecify"),
+        "",
+        t("messages.mailRegards")
+      ].join("\\n");
+
+      const mailtoUrl = `mailto:${route.email}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+      submitButtonText.textContent = t("messages.submitPreparing");
+      formStatus.textContent = tf("messages.formRouted", { email: route.email });
+      formSuccess.textContent = t("contact.form.success");
+      playSuccessAnimation();
+
+      window.setTimeout(() => {
+        window.location.href = mailtoUrl;
+        submitButtonText.textContent = t("messages.submitReady");
+      }, prefersReducedMotion ? 120 : 900);
+    });
+
+    document.addEventListener("kasiassur:languagechange", () => {
+      updateRoute(subjectField.value);
+      showError(nameField, "");
+      showError(emailField, "");
+      showError(phoneField, "");
+      formSuccess.textContent = t("contact.form.success");
+      resetFormFeedback();
+    });
+
+    // Effet magnetique sur les cartes modules pour les terminaux a souris.
+    if (window.matchMedia("(hover: hover)").matches && canUseMotion) {
+      magneticCards.forEach((card) => {
+        const glow = card.querySelector("[data-card-glow]");
+        const baseShadow = window.getComputedStyle(card).boxShadow;
+
+        card.addEventListener("mousemove", (event) => {
+          const bounds = card.getBoundingClientRect();
+          const relX = event.clientX - bounds.left;
+          const relY = event.clientY - bounds.top;
+          const moveX = (relX / bounds.width - 0.5) * 16;
+          const moveY = (relY / bounds.height - 0.5) * 16;
+          const rotateX = (relY / bounds.height - 0.5) * -6;
+          const rotateY = (relX / bounds.width - 0.5) * 6;
+
+          gsap.to(card, {
+            x: moveX,
+            y: moveY - 6,
+            rotateX,
+            rotateY,
+            duration: 0.28,
+            ease: "power2.out",
+            transformPerspective: 900,
+            boxShadow: "0 0 0 1px rgba(0, 209, 255, 0.22), 0 18px 48px rgba(0, 209, 255, 0.26)"
+          });
+
+          if (glow) {
+            const glowX = (relX / bounds.width) * 100;
+            const glowY = (relY / bounds.height) * 100;
+            glow.style.background = `radial-gradient(circle at ${glowX}% ${glowY}%, rgba(0, 209, 255, 0.28), transparent 58%)`;
+          }
+        });
+
+        card.addEventListener("mouseleave", () => {
+          gsap.to(card, {
+            x: 0,
+            y: 0,
+            rotateX: 0,
+            rotateY: 0,
+            duration: 0.45,
+            ease: "power3.out",
+            boxShadow: baseShadow
+          });
+        });
+      });
+    }
+  </script>
+</body>
+</html>
